@@ -1,0 +1,68 @@
+body{
+			display: flex;
+			align-items: center;
+			height: 100vh;
+			justify-content: center;
+			background: write;
+			background-size: cover;
+  			overflow: hidden;
+		}
+		.loader{
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: fixed;
+			top:0;
+			left: 0;
+			z-index: 100000;
+			clip-path: circle(150% at 100% 0);
+			transition: clip-path 0.3s ease-in-out;
+		}
+		.loader2{
+			clip-path: circle(0% at 100% 0);
+		}
+
+		.hidden{
+			overflow: hidden;
+		}
+		.petalos{		
+
+			position: relative;
+			transform: rotate(360deg);
+			animation-name: petalos;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			
+		}
+		.logo{
+			position: absolute;
+		}
+		
+		@keyframes petalos{
+			0%{
+				opacity: 0;
+				transform: scale(.3) rotate(0deg);
+			}
+			30%{
+				
+				opacity: 1;
+			}
+			70%{
+				
+				transform: scale(.6)rotate(205deg);
+			}
+			100%{
+				opacity: 0;
+				transform: scale(.5) rotate(0deg);
+
+			}
+
+		}
+			
+		}
+.content{
+position: relative;
+z-index: 100000;
+}
